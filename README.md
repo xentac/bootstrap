@@ -14,7 +14,11 @@ irm https://raw.githubusercontent.com/xentac/bootstrap/<commit>/windows.ps1 | ie
 ```
 
 Use a commit hash, not `main`. The script runs with administrator rights,
-and a hash makes sure that it is the version that you read.
+and a hash makes sure that it is the version that you read. The first 12
+characters of the hash are enough. Do not use fewer: GitHub also serves
+commits from forks of this repo, and a fork can make a commit whose hash
+starts with the same 7 characters in minutes. Over a remote desktop, paste
+the command from the clipboard instead of typing it. Keep `https://`.
 
 The script does these steps:
 
